@@ -108,12 +108,15 @@
         }
       });
 
-      if (response.ok) {
-        form.reset();
-        message.classList.remove("hidden");
-      } else {
-        alert("Oops! Something went wrong.");
-      }
+     const result = await response.json();
+console.log("FormSpark response:", result);
+
+if (response.ok) {
+  form.reset();
+  message.classList.remove("hidden");
+} else {
+  alert("Error: " + (result.error || "Something went wrong."));
+}
     });
   });
 </script>
