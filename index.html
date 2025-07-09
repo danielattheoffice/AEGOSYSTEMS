@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&family=Raleway&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <style>
     .bg-gradient-overlay {
       background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
@@ -16,126 +17,116 @@
     .bg-aego-slate-green { background-color: #2A3B32; }
     .shadow-thermal { box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
     .hover\:shadow-elegant:hover { box-shadow: 0 12px 20px rgba(0,0,0,0.5); }
+    .text-brand-orange { color: #bc6027; }
   </style>
 </head>
 <body class="min-h-screen w-full relative overflow-auto bg-black">
 
   <!-- Logo -->
-<div class="absolute top-6 left-6 z-20">
-  <img src="lovable-uploads/logo.png" alt="AEGO logo" class="h-24 w-auto drop-shadow-md">
-</div>
+  <div class="absolute top-6 left-6 z-20">
+    <img src="lovable-uploads/logo.png" alt="AEGO logo" class="h-24 w-auto drop-shadow-md">
+  </div>
 
   <!-- Background -->
-<div 
-  class="absolute inset-0 bg-cover bg-center bg-no-repeat h-screen z-0"
-  style="background-image: url('lovable-uploads/4e3b129d-da53-4d77-b3b2-150285429b8d.png');"
->
-  <div class="absolute inset-0 bg-gradient-overlay"></div>
-</div>
+  <div 
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat h-screen z-0"
+    style="background-image: url('lovable-uploads/4e3b129d-da53-4d77-b3b2-150285429b8d.png');"
+  >
+    <div class="absolute inset-0 bg-gradient-overlay"></div>
+  </div>
 
   <!-- Main Content -->
-<main class="relative z-10 flex flex-col items-center justify-start px-6 pt-40 pb-16 min-h-screen md:pt-56 md:pb-24 lg:pt-72 lg:pb-32">
+  <main class="relative z-10 flex flex-col items-center justify-start px-6 pt-40 pb-16 min-h-screen md:pt-56 md:pb-24 lg:pt-72 lg:pb-32">
     <div class="max-w-4xl mx-auto text-center">
-     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-[Rajdhani] text-aego-bone-gray mb-6 leading-tight">
-  Infrared Optics. Modular by Design. Compliant by Default.
-</h1>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-[Rajdhani] text-aego-bone-gray mb-6 leading-tight">
+        Infrared Optics. Modular by Design. Compliant by Default.
+      </h1>
       <p class="text-base md:text-lg font-[Raleway] text-aego-cool-gray mb-10 max-w-3xl mx-auto leading-relaxed">
-  AEGO Systems delivers U.S.-made LWIR lens assemblies designed for fast integration, open-architecture payloads, and sourcing compliance.
-</p>
+        AEGO Systems delivers U.S.-made LWIR lens assemblies designed for fast integration, open-architecture payloads, and sourcing compliance.
+      </p>
 
-    <form 
-  id="contact-form"
-  action="https://submit-form.com/iBkq3K7JW" 
-  method="POST" 
-  class="max-w-md mx-auto space-y-4"
->
-  <input 
-    type="text" 
-    name="name" 
-    placeholder="Your Name" 
-    required 
-    class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-aego-bone-gray placeholder:text-aego-cool-gray"
-  />
+      <form 
+        id="contact-form"
+        action="https://submit-form.com/16U49gaW5" 
+        method="POST" 
+        class="max-w-md mx-auto space-y-4"
+      >
+        <input 
+          type="text" 
+          name="name" 
+          placeholder="Your Name" 
+          required 
+          class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-aego-bone-gray placeholder:text-aego-cool-gray"
+        />
 
-  <input 
-    type="email" 
-    name="email" 
-    placeholder="Your Email" 
-    required 
-    class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-aego-bone-gray placeholder:text-aego-cool-gray"
-  />
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="Your Email" 
+          required 
+          class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-aego-bone-gray placeholder:text-aego-cool-gray"
+        />
 
-  <textarea 
-    name="message" 
-    placeholder="Your Message" 
-    required 
-    class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-aego-bone-gray placeholder:text-aego-cool-gray min-h-[100px]"
-  ></textarea>
+        <textarea 
+          name="message" 
+          placeholder="Your Message" 
+          required 
+          class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-aego-bone-gray placeholder:text-aego-cool-gray min-h-[100px]"
+        ></textarea>
 
-  <input type="hidden" name="_redirect" value="false" />
+        <input type="hidden" name="_redirect" value="false" />
 
-  <button 
-    type="submit"
-    class="bg-aego-slate-green hover:bg-green-800 text-white font-[Raleway] font-semibold text-lg px-12 py-4 rounded-lg shadow-thermal transition-all duration-300 hover:shadow-elegant transform hover:scale-105 w-full"
-  >
-    Send Message
-  </button>
+        <div class="g-recaptcha" data-sitekey="6Lf9w30rAAAAAJIaa0l60JqxjsHpguNdK00axRxW"></div>
 
-  <!-- This will be shown after submit -->
-  <p id="form-success" class="text-green-400 text-center mt-4 hidden">Thanks! We'll be in touch soon.</p>
-</form>
+        <button 
+          type="submit"
+          class="bg-aego-slate-green hover:bg-green-800 text-white font-[Raleway] font-semibold text-lg px-12 py-4 rounded-lg shadow-thermal transition-all duration-300 hover:shadow-elegant transform hover:scale-105 w-full"
+        >
+          Send Message
+        </button>
+
+        <p id="form-success" class="text-brand-orange text-center mt-4 hidden">
+          Thanks! We'll be in touch soon.
+        </p>
+      </form>
     </div>
   </main>
 
   <!-- Footer -->
- <footer class="mt-16 text-left w-full px-6">
-  <p class="text-[0.5rem] text-white/70 font-[Raleway]">
-  © 2025 AEGO Systems. All rights reserved.
-</p>
-</footer>
+  <footer class="mt-16 text-left w-full px-6">
+    <p class="text-[0.5rem] text-white/70 font-[Raleway]">
+      © 2025 AEGO Systems. All rights reserved.
+    </p>
+  </footer>
+
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contact-form");
-    const message = document.getElementById("form-success");
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contact-form");
+      const message = document.getElementById("form-success");
 
-   form.addEventListener("submit", async function (e) {
-  e.preventDefault();
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
 
-  try {
-    const formData = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
+        try {
+          const formData = new FormData(form);
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            form.reset();
+            message.classList.remove("hidden");
+          } else {
+            const result = await response.json();
+            alert("Form error: " + (result.error || "Something went wrong."));
+          }
+        } catch (error) {
+          alert("JS error: " + error.message);
+        }
+      });
     });
-
-    let resultText = await response.text();
-    console.log("FormSpark raw response:", resultText);
-
-    if (response.ok) {
-      form.reset();
-      message.classList.remove("hidden");
-    } else {
-      alert("Form error: " + resultText);
-    }
-  } catch (error) {
-    alert("JS error: " + error.message);
-  }
-});
-
-     const result = await response.json();
-console.log("FormSpark response:", result);
-
-if (response.ok) {
-  form.reset();
-  message.classList.remove("hidden");
-} else {
-  alert("Error: " + (result.error || "Something went wrong."));
-}
-    });
-  });
-</script>
+  </script>
 </body>
 </html>
