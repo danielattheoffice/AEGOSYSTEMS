@@ -45,50 +45,47 @@
         AEGO Systems delivers U.S.-made LWIR lens assemblies designed for fast integration, open-architecture payloads, and sourcing compliance.
       </p>
 
-      <form 
-        id="contact-form"
-        action="https://submit-form.com/16U49gaW5" 
-        method="POST" 
-        class="max-w-md mx-auto space-y-4"
-      >
-        <input 
-          type="text" 
-          name="name" 
-          placeholder="Your Name" 
-          required 
-          class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-aego-bone-gray placeholder:text-aego-cool-gray"
-        />
+<form
+  id="contact-form"
+  action="https://submit-form.com/16U49gaW5"
+  method="POST"
+  class="max-w-md mx-auto space-y-4"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    class="w-full px-4 py-3 rounded"
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    class="w-full px-4 py-3 rounded"
+  />
+  <textarea
+    name="message"
+    placeholder="Your Message"
+    required
+    class="w-full px-4 py-3 rounded min-h-[100px]"
+  ></textarea>
 
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="Your Email" 
-          required 
-          class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-aego-bone-gray placeholder:text-aego-cool-gray"
-        />
+  <!-- disable redirect -->
+  <input type="hidden" name="_redirect" value="false" />
 
-        <textarea 
-          name="message" 
-          placeholder="Your Message" 
-          required 
-          class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-aego-bone-gray placeholder:text-aego-cool-gray min-h-[100px]"
-        ></textarea>
+  <button
+    type="submit"
+    class="bg-black text-white py-3 px-6 rounded"
+  >
+    Send Message
+  </button>
 
-        <input type="hidden" name="_redirect" value="false" />
-
-        <div class="g-recaptcha" data-sitekey="6Lf9w30rAAAAAJIaa0l60JqxjsHpguNdK00axRxW"></div>
-
-        <button 
-          type="submit"
-          class="bg-aego-slate-green hover:bg-green-800 text-white font-[Raleway] font-semibold text-lg px-12 py-4 rounded-lg shadow-thermal transition-all duration-300 hover:shadow-elegant transform hover:scale-105 w-full"
-        >
-          Send Message
-        </button>
-
-        <p id="form-success" class="text-brand-orange text-center mt-4 hidden">
-          Thanks! We'll be in touch soon.
-        </p>
-      </form>
+  <p id="form-success" class="text-green-400 text-center mt-4 hidden">
+    Thanks! We'll be in touch soon.
+  </p>
+</form>
     </div>
   </main>
 
